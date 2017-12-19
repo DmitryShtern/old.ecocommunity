@@ -5,7 +5,7 @@ import { Main } from './main'
 class App extends Component {
 
   constructor() {
-    super()
+    super();
 
     this.state = {
       image:null,
@@ -32,10 +32,9 @@ class App extends Component {
     //   .then(abc => this.setState({ abc: abc }))
   }
 
-
   render() {
     return (
-      <div>
+      <Screen>
         <Route
           path="/main"
           component={() => (
@@ -43,12 +42,12 @@ class App extends Component {
           )}
         />
         <Route
-          path="/login"
+          path="/partners"
           component={() => (
             null
           )}
         />
-      </div>
+      </Screen>
     )
   }
 }
