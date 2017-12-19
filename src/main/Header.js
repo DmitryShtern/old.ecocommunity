@@ -2,61 +2,31 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  width: auto;
+  width: 100%;
+  text-align: left;
   padding: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  background: black;
 `
 
-const Button = styled.input`
-  width: 23%;
-  margin-left: 1%;
-  margin-right: 1%;
-  font-size: 450%;
-  background: white;
+const Link = styled.a`
+  color: white;
+  padding: 1%;
+  font-size: 250%;
+  background: green;
 `
 
-const Header = ({
-  openTableProduct,
-  openTableCheck,
-  openGraph,
-  openTableABC,
-  closeTableProduct,
-  closeTableCheck,
-  closeGraph,
-  closeTableABC,
-}) => (
-  <Container>
-    <Button
-      type="button"
-      value="Товары"
-      onClick={() => (
-        openTableProduct(), closeTableCheck(), closeTableABC(), closeGraph()
-      )}
-    />
-    <Button
-      type="button"
-      value="Продажи"
-      onClick={() => (
-        openTableCheck(), closeTableProduct(), closeTableABC(), closeGraph()
-      )}
-    />
-    <Button
-      type="button"
-      value="График продаж"
-      onClick={() => (
-        openGraph(), closeTableProduct(), closeTableCheck(), closeTableABC()
-      )}
-    />
-    <Button
-      type="button"
-      value="ABC анализ"
-      onClick={() => (
-        openTableABC(), closeTableProduct(), closeTableCheck(), closeGraph()
-      )}
-    />
-  </Container>
+const Logo = styled.img`
+    width: 70px;
+    margin-top:2%;
+    height: 70px;
+`
+
+const Header = ({}) => (
+    <Container>
+        <Link href="/main">Лента</Link>
+        <Link href="/gallery">Галерея</Link>
+        <Link href="/partners">Партнеры</Link>
+        <Link href="/about">О нас</Link>
+    </Container>
 )
 
 export default Header
