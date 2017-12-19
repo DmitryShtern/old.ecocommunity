@@ -1,31 +1,21 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Route } from 'react-router-dom'
 import { Main } from './main'
+
 import { Partners } from './partners'
 
 const Screen = styled.div`
-    width: 1440;
-    height: 900;
-`;
+    width: 1440px;
+    height: 900px;
+
+    background-image: url("https://pp.userapi.com/c841323/v841323711/48cc7/N46MlAIBQEs.jpg");
+    `;
 
 class App extends Component {
 
   constructor() {
     super();
-
-    // this.state = {
-    //   image:null,
-    //   type: null,
-    //   products: [],
-    //   selling:[],
-    //   abc:[],
-    //   count_abc: [],
-    //   isOpenTableProduct: true,
-    //   isOpenTableCheck: false,
-    //   isOpenGraph: false,
-    //   isOpenTableABC: false,
-    // }
-  }
 
   componentWillMount() {
     // fetch(base_url + '/abc/' + type)
@@ -40,7 +30,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <Screen>
         <Route
           path="/main"
           component={() => (
@@ -53,7 +43,7 @@ class App extends Component {
             <Partners/>
           )}
         />
-      </div>
+      </Screen>
     )
   }
 }
