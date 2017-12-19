@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import { Main } from './main'
+import { Partners } from './partners'
 
 class App extends Component {
 
@@ -34,7 +35,7 @@ class App extends Component {
 
   render() {
     return (
-      <Screen>
+      <div>
         <Route
           path="/main"
           component={() => (
@@ -44,10 +45,10 @@ class App extends Component {
         <Route
           path="/partners"
           component={() => (
-            null
+            <Partners/>
           )}
         />
-      </Screen>
+      </div>
     )
   }
 }

@@ -4,7 +4,8 @@ import styled from 'styled-components'
 const Container = styled.div`
   width: 100%;
   text-align: left;
-  padding: 2%;
+  padding-left: 2%;
+  padding-bottom: 1%;
 `
 
 const Link = styled.a`

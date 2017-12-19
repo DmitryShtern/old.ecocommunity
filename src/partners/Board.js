@@ -8,9 +8,6 @@ const Container = styled.div`
     
     background-color: #f4f5f7;   
     
-    margin-top: 10%; //DELETE
-    margin-left: 15%;
-    
     border: 2px solid black;
     border-radius: 10px;
 `;
