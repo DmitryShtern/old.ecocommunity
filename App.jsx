@@ -4,50 +4,50 @@ class App extends React.Component {
     headerProp;
     contentProp;
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            header: "Header from props",
-            content: "Content from props",
-            bottom: "??ADS?"
-        }
-    }
-
-    // constructor() {
-    //     super();
-    //
+    // constructor(props) {
+    //     super(props);
     //     this.state = {
-    //         header: "Header from state...",
-    //         content: "Content from state..."
-    //
-    //         // data:
-    //         //     [
-    //         //         {
-    //         //             "id": 1,
-    //         //             "name": "Foo",
-    //         //             "age": "20"
-    //         //         },
-    //         //
-    //         //         {
-    //         //             "id": 2,
-    //         //             "name": "Bar",
-    //         //             "age": "30"
-    //         //         },
-    //         //
-    //         //         {
-    //         //             "id": 3,
-    //         //             "name": "Baz",
-    //         //             "age": "40"
-    //         //         },
-    //         //
-    //         //         {
-    //         //             "id": 4,
-    //         //             "name": "Baz",
-    //         //             "age": "50"
-    //         //         }
-    //         //     ]
+    //         header: "Header from props",
+    //         content: "Content from props",
+    //         bottom: "??ADS?"
     //     }
     // }
+
+    constructor() {
+        super();
+
+        this.state = {
+            header: "Header from state...",
+            content: "Content from state..."
+
+            // data:
+            //     [
+            //         {
+            //             "id": 1,
+            //             "name": "Foo",
+            //             "age": "20"
+            //         },
+            //
+            //         {
+            //             "id": 2,
+            //             "name": "Bar",
+            //             "age": "30"
+            //         },
+            //
+            //         {
+            //             "id": 3,
+            //             "name": "Baz",
+            //             "age": "40"
+            //         },
+            //
+            //         {
+            //             "id": 4,
+            //             "name": "Baz",
+            //             "age": "50"
+            //         }
+            //     ]
+        }
+    }
 
    render() {
        return (
