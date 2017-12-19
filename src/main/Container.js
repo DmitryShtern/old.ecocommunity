@@ -1,34 +1,22 @@
 import React from 'react'
 import Header from './Header'
+import HeaderFeed from './HeaderFeed'
+import Feed from './Feed'
 import styled from 'styled-components'
-import TableProduct from './TableProduct'
-import TableCheck from './TableCheck'
-import TableABC from './TableABC'
-import Graph from './Graph'
 
 const Screen = styled.div`
-  width: auto;
-  height: auto;
+  padding-left:10%;
+  wight:auto;
+  height:820px;
+  background-image: url(/Users/VladislavNovikov/PycharmProjects/ecocommunity/public/1Feed.png);
+  background-repeat: no-repeat;
 `
 
-const Container = ({
-  image,
-  products,
-  selling,
-  abc,
-  count_abc,
-  isOpenTableProduct,
-  isOpenTableCheck,
-  isOpenTableABC,
-  isOpenGraph,
-  ...ocProps
-}) => (
+const Container = ({}) => (
   <Screen>
-    <Header {...ocProps} />
-    {isOpenTableProduct && <TableProduct products={products} />}
-    {isOpenTableCheck && <TableCheck selling={selling} />}
-    {isOpenTableABC && <TableABC abc={abc} />}
-    {isOpenGraph && <Graph data={image}/>}
+    <Header/>
+    <HeaderFeed/>
+    <Feed/>
   </Screen>
 )
 
