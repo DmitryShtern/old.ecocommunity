@@ -8,7 +8,8 @@ class App extends React.Component {
         super(props);
         this.state = {
             header: "Header from props",
-            content: "Content from props"
+            content: "Content from props",
+            bottom: "??ADS?"
         }
     }
 
