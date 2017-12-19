@@ -13,9 +13,7 @@ const Image = styled.img`
 `
 
 const ContainerNews = styled.div`
-    border-style: solid;
     text-align: center;
-    border-width: 2px;
 `
 
 const News = () => (
