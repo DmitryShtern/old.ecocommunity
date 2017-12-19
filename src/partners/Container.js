@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Header from '../main/Header'
 import Board from './Board'
-import Header from "../main/Header";
 
 const Screen = styled.div`
   padding-left:10%;

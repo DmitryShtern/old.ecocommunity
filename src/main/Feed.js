@@ -2,24 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 import News from './News'
 
-const ContainerList = styled.div`
-    width: 46%;
-    margin-left:2%;
-    text-align: center;
-`
+const Container = styled.div`
+    height: 100%;
+    width: 50%;
+    
+    background-color: #f4f5f7;   
+    
+    border: 2px solid black;
+    border-radius: 10px;
+`;
 
-const ListNews = styled.div`
+const ListNews = styled.ul`
     text-align: center;
-`
+`;
 
 const Feed = () => (
-    <ContainerList>
+    <Container>
         <ListNews>
             <News/>
             <News/>
             <News/>
         </ListNews>
-    </ContainerList>
-)
+    </Container>
+);
 
 export default Feed
