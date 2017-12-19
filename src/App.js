@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Route } from 'react-router-dom'
 import { Main } from './main'
+import {Partners} from "./partners";
 
 const Screen = styled.div`
-    width: 1440;
-    height: 900;
-`;
+    width: 1440px;
+    height: 900px;
+
+    background-image: url("https://pp.userapi.com/c841323/v841323711/48cc7/N46MlAIBQEs.jpg");
+    `;
 
 class App extends Component {
 
@@ -49,7 +53,7 @@ class App extends Component {
                 <Route
                     path="/partners"
                     component={() => (
-                        null
+                        <Partners/>
                     )}
                 />
             </Screen>
