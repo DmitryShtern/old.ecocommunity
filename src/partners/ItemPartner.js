@@ -23,7 +23,7 @@ const ItemPartner = ({ name, description, image, source  }) => (
         <img src={image} alt="Partner" width="90%"/>
         <p>{name}</p>
         <p>{description}</p>
-        <a href={source}>Ссылка</a>
+        <a href={source} target="_blank">Ссылка</a>
     </Container>
 );
 

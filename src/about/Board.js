@@ -49,15 +49,17 @@ const Board = ({map}) => (
             <p>Мы находимся по адресу: Краснодарский край, г. Белореченск, ул. Интернациональная, д. 27</p>
             <p>Телефон: +7 (988) 389 - 28 - 48</p>
         </AboutUs>
-        <MapImg src={map}/>
+        <a target="_blank" href="https://www.google.com/maps/place/Internatsional'naya+Ulitsa,+27,+Belorechensk,+Krasnodarskiy+kray,+352637/@44.7543752,39.872228,702m/data=!3m1!1e3!4m5!3m4!1s0x40f0c5f27904432d:0x90f4489b2cfe9c88!8m2!3d44.7543752!4d39.8744167">
+            <MapImg src={map}/>
+        </a>
         <SocIcons>
-            <a href="https://vk.com/kkooeco">
+            <a href="https://vk.com/kkooeco" target="_blank">
                 <ICO src="http://localhost:8000/img/socicons/vk.png" width="50px"/>
             </a>
-            <a href="https://ok.ru/kkooeco">
+            <a href="https://ok.ru/kkooeco" target="_blank">
                 <ICO src="http://localhost:8000/img/socicons/ok.png" width="50px"/>
             </a>
-            <a href="https://fb.com/kkooeco">
+            <a href="https://fb.com/kkeooeco" target="_blank">
                 <ICO src="http://localhost:8000/img/socicons/fb.png" width="50px"/>
             </a>
         </SocIcons>

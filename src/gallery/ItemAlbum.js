@@ -22,7 +22,7 @@ const Container = styled.div`
 const ItemAlbum = ({ name, preview }) => (
     <Container>
         {console.log("Preview = " + preview)}
-        <a href={preview}>
+        <a href={preview} target="_blank">
             <img src={preview} alt={"Preview loading error with album '" + name + "'"} width="100%"/>
         </a>
         <p>{name}</p>
