@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Title = styled.p`
     width: 100%;
     text-align: left;
-    margin-left: 5%;
     font-size: 150%;  
 `;
 
@@ -26,13 +25,16 @@ const Content = styled.p`
 
 const ContainerNews = styled.div`
     width: 80%;
-    height: 500px;
+    // height: 500px;
 
     background-color: white;
     
     margin-bottom: 10%;
     margin-right: 5%;
-    margin-left: 5%;
+    // margin-left: 5%;
+    
+    padding-left: 5%;
+    padding-right: 5%;
     
     border: 1px solid gray;
     border-radius: 5px;
@@ -44,7 +46,9 @@ const ContainerNews = styled.div`
 const News = ({title, content, image}) => (
     <ContainerNews>
         <Title>{title}</Title>
-        <Image src={image}/>
+        <a target="_blank" href={image}>
+            <Image src={image}/>
+        </a>
         <Content>{content}</Content>
     </ContainerNews>
 );
