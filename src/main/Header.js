@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     width: 650px;
-    height: 150px;
+    height: 125px;
     display: wrap;
     
     text-align: center;
@@ -21,8 +21,8 @@ const Link = styled.a`
 `;
 
 const Logo = styled.img`
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     
     margin-right: 20px;
     
@@ -31,14 +31,14 @@ const Logo = styled.img`
 `;
 
 const Button = styled.img`
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     
     margin-left: 5px;
     margin-right: 5px;
 `;
 
-const Header = ({}) => (
+const Header = () => (
     <Container>
         <Link href={"/feed"}>
             <Logo src="/img/logo.png"/>
