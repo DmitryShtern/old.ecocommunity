@@ -7,8 +7,10 @@ const Container = styled.div`
     background-color: white;
     
     margin-bottom: 10%;
-    margin-right: 6%;
-    margin-left: 6%;
+    margin-right: 5%;
+    margin-left: 4%;
+    
+    padding: 10px;
     
     border: 1px solid gray;
     border-radius: 5px;
@@ -16,6 +18,7 @@ const Container = styled.div`
     display: inline-block;
     
     text-align: center;
+    
 `;
 
 const ItemPartner = ({ name, description, image, source  }) => (
@@ -23,7 +26,7 @@ const ItemPartner = ({ name, description, image, source  }) => (
         <img src={image} alt="Partner" width="90%"/>
         <p>{name}</p>
         <p>{description}</p>
-        <a href={source} target="_blank">Ссылка</a>
+        <a href={source} target="_blank" >Ссылка</a>
     </Container>
 );
 

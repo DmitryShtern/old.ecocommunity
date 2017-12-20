@@ -59,7 +59,7 @@ const Board = ({map}) => (
             <a href="https://ok.ru/kkooeco" target="_blank">
                 <ICO src="http://localhost:8000/img/socicons/ok.png" width="50px"/>
             </a>
-            <a href="https://fb.com/kkeooeco" target="_blank">
+            <a href="https://fb.com/kkooeco" target="_blank">
                 <ICO src="http://localhost:8000/img/socicons/fb.png" width="50px"/>
             </a>
         </SocIcons>
