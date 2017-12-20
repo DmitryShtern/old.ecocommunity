@@ -10,10 +10,10 @@ const Screen = styled.div`
   padding-left: 10%;
 `;
 
-const Container = ({}) => (
+const Container = ({map}) => (
     <Screen>
         <Header/>
-        <Board/>
+        <Board map={map}/>
     </Screen>
 );
 

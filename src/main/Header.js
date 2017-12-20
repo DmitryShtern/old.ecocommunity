@@ -45,7 +45,7 @@ const Header = ({}) => (
             {/*<p>Feed</p>*/}
         </Link>
         <Link href={"/feed"}>
-            <Button src="/img/feed_w.png"/>
+            <Button src="/img/feed_w.png "/>
         </Link>
         <Link href={"/gallery"}>
             <Button src="/img/gallery_w.png"/>

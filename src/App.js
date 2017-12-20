@@ -21,7 +21,9 @@ class App extends Component {
 
             posts: [],
             albums: [],
-            partners: []
+            partners: [],
+
+            map_image: "http://localhost:8000/img/map.jpg"
         }
     }
 
@@ -91,7 +93,7 @@ class App extends Component {
                 <Route
                     path="/about"
                     component={() => (
-                        <About/>
+                        <About map={this.state.map_image}/>
                     )}
                 />
             </Screen>
