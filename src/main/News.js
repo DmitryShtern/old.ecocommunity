@@ -29,9 +29,9 @@ const ContainerNews = styled.div`
 
     background-color: white;
     
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-right: 5%;
-    // margin-left: 5%;
+    margin-left: 1%;
     
     padding-left: 5%;
     padding-right: 5%;

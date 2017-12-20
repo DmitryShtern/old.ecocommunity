@@ -8,6 +8,7 @@ const Container = styled.div`
     background-color: white;
     
     margin-bottom: 5%;
+    margin-top: 5%;
     margin-right: 6%;
     margin-left: 6%;
     

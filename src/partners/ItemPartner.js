@@ -6,7 +6,8 @@ const Container = styled.div`
 
     background-color: white;
     
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     margin-right: 5%;
     margin-left: 4%;
     

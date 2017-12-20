@@ -4,7 +4,6 @@ import News from './News'
 import HeaderFeed from "./HeaderFeed";
 
 const Container = styled.div`
-    height: 200%;
     width: 50%;
     
     background-color: #f4f5f7;   
