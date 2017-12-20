@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import ItemAlbum from "./ItemAlbum";
 
 const Container = styled.div`
-    width: 50%;
+    width: 646px; //-4px (2px border * 2)
     
-    background-color: #f4f5f7;   
+    background-color: rgba(244, 245, 247, 0.8); //#f4f5f7;   
     
     border: 2px solid black;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    
+    margin-bottom: 9%;
 `;
 
 const Board = ({ albums }) => (

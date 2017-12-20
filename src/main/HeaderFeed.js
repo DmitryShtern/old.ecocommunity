@@ -15,10 +15,12 @@ const NavigationBar = styled.div`
 
 const Button = styled.input`
    background: green;
+   
+   padding: 1%;
+   margin: 1% 3% 1% 3%;
+   
    font-size: 150%;
    color: white;
-   padding: 1%;
-   margin: 1%;
 `;
 
 const HeaderFeed = ({selectCategory}) => (

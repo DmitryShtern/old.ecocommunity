@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    width: 50%;
+    width: 646px; //-4px (2px border * 2)
+    
+    background-color: #ecffdd; //rgba(236, 255, 221, 1);
+
+    border: 2px solid black;
+    border-radius: 10px;
     
     padding-bottom: 20px;
-    
-    background-color: #ecffdd;   
-    
-    border: 2px solid black;
-    border-radius: 10px;    
     
     text-align: center;
 `;
@@ -69,7 +69,7 @@ const Board = ({map}) => {
                 </a>
             </SocIcons>
         </Container>
-    );
+    )
 };
 
 export default Board

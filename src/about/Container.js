@@ -4,10 +4,11 @@ import Header from '../main/Header'
 import Board from './Board'
 
 const Screen = styled.div`
-  wight: 1440px;
-  height: 900px;
-  
-  padding-left: 10%;
+    padding-left: 10%;
+    
+    background-image: url("http://localhost:8000/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 `;
 
 const Container = ({map}) => (

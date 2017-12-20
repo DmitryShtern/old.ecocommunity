@@ -4,11 +4,18 @@ import {Route} from 'react-router-dom'
 import {Main} from './main'
 import {Gallery} from './gallery'
 import {Partners} from './partners'
-import {About} from "./about";
+import {About} from "./about"
+import Widgets from "./main/Widgets"
 
 const Screen = styled.div`
     width: 1440px;
-    height: 900px;
+    // height: 828px;
+    
+    display: flex;
+    
+    background-image: url("http://localhost:8000/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 `;
 
 class App extends Component {
@@ -23,7 +30,8 @@ class App extends Component {
             albums: [],
             partners: [],
 
-            map_image: "http://localhost:8000/img/map.jpg"
+            map_image: "http://localhost:8000/img/map.jpg",
+            bg_image: "http://localhost:8000/img/bg.jpg"
         }
     }
 
@@ -96,6 +104,8 @@ class App extends Component {
                         <About map={this.state.map_image}/>
                     )}
                 />
+
+                <Widgets/>
             </Screen>
         )
     }

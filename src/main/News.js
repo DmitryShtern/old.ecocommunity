@@ -25,7 +25,6 @@ const Content = styled.p`
 
 const ContainerNews = styled.div`
     width: 80%;
-    // height: 500px;
 
     background-color: white;
     
@@ -37,10 +36,7 @@ const ContainerNews = styled.div`
     padding-right: 5%;
     
     border: 1px solid gray;
-    border-radius: 5px;
-    
-    
-    // text-align: center;  
+    border-radius: 5px;  
 `;
 
 const News = ({title, content, image}) => (

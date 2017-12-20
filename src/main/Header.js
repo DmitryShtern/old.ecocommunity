@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Container = styled.div`
     width: 650px;
     height: 125px;
-    display: wrap;
     
     text-align: center;
     
