@@ -2,29 +2,50 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Title = styled.p`
-    width: 20%;
+    width: 100%;
     text-align: left;
     margin-left: 5%;
-    font-size:150%;
+    font-size: 150%;  
 `;
 
 const Image = styled.img`
-    width: 20%;
+    width: 60%;
+    
+    margin-left: 30%;
+    
+    border: 1px solid #f4f5f7;
+    border-radius: 5px;
+`;
+
+const Content = styled.p`
+    text-align: center;
+    font-size: 100%;
+    
+    margin-top: 20px;
 `;
 
 const ContainerNews = styled.div`
-    border-style: solid;
-    text-align: center;
-    border-width: 2px;
-    
+    width: 80%;
+    height: 500px;
+
     background-color: white;
+    
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+    
+    // text-align: center;  
 `;
 
-const News = ({id, title, content, image}) => (
-    <ContainerNews key={id}>
+const News = ({title, content, image}) => (
+    <ContainerNews>
         <Title>{title}</Title>
         <Image src={image}/>
-        <p>{content}</p>
+        <Content>{content}</Content>
     </ContainerNews>
 );
 

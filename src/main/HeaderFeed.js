@@ -3,14 +3,14 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 100%;
-  margin-left: 2%;
   text-align: left;
+  
+  margin-top: 20px;
 `;
 
 const NavigationBar = styled.div`
-   background: grey;
    text-align: center;
-   width: 46%;
+   width: 100%;
 `;
 
 const Button = styled.input`

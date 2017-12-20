@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 650px;
-  height: 100px;
+  height: 150px;
   display: wrap;
   
   text-align: center;
@@ -12,6 +12,8 @@ const Container = styled.div`
   display: table-cell;
   
   background: green;
+  
+  border-radius: 10px;
 `;
 
 const Link = styled.a`
@@ -23,11 +25,18 @@ const Link = styled.a`
 const Logo = styled.img`
     width: 100px;
     height: 100px;
+    
+    margin-right: 20px;
+    
+    border-radius: 15px;
 `;
 
 const Button = styled.img`
     width: 80px;
     height: 80px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
 `;
 
 const Header = ({}) => (

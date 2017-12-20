@@ -4,10 +4,10 @@ import Header from '../main/Header'
 import Board from './Board'
 
 const Screen = styled.div`
-  padding-left:10%;
-  
   wight: 1440px;
   height: 900px;
+  
+  padding-left:10%;
 `;
 
 const Container = ({ partners }) => (

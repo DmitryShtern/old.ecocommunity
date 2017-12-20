@@ -14,29 +14,11 @@ const Container = styled.div`
     padding-top: 3%;
 `;
 
-// const ul = styled.div`
-//     // -moz-column-count: 2;
-//     // -webkit-column-count: 2;
-//     // column-count: 2;
-// `;
-
 const Board = ({ partners }) => (
     <Container>
         <ul>
 
             {partners.map(partner => (<ItemPartner {...partner}/>))}
-
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
-
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
-
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
-            {/*<ItemPartner/>*/}
         </ul>
     </Container>
 );

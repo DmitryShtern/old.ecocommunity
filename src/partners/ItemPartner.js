@@ -5,7 +5,7 @@ const Container = styled.div`
     width: 35%;
     height: 300px;
 
-    background-color: #f4f5f7;
+    background-color: white;
     
     // margin-top: 10%;
     margin-right: 6%;
