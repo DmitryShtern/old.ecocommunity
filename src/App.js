@@ -1,13 +1,14 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
-import {Route} from 'react-router-dom'
-import {Main} from './main'
-import {Partners} from './partners'
+import { Route } from 'react-router-dom'
+import { Main } from './main'
+import { Gallery } from './gallery'
+import { Partners } from './partners'
 
 const Screen = styled.div`
     width: 1440px;
     height: 900px;
-    `;
+`;
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
             selected_category: 1,
 
             posts: [],
+            albums: [],
             partners: []
         }
     }
@@ -39,7 +41,16 @@ class App extends Component {
                     return res.json()
                 }
             })
-            .then(partners => this.setState({partners: partners}))
+            .then(partners => this.setState({partners: partners}));
+
+        fetch("/getGallery")
+            .then(res => {
+                console.log(res);
+                if (res.status === 200) {
+                    return res.json()
+                }
+            })
+            .then(albums => this.setState({albums: albums}))
     }
 
     selectCategory = (category_id) => this.setState({selected_category: category_id});
@@ -60,7 +71,9 @@ class App extends Component {
                 <Route
                     path="/gallery"
                     component={() => (
-                        null
+                        <Gallery
+                            albums={this.state.albums}
+                        />
                     )}
                 />
                 <Route

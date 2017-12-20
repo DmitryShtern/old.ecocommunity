@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ItemPartner from "./ItemPartner";
+import ItemAlbum from "./ItemAlbum";
 
 const Container = styled.div`
     height: 100%;
@@ -9,15 +9,13 @@ const Container = styled.div`
     background-color: #f4f5f7;   
     
     border: 2px solid black;
-    border-radius: 10px;
-    
-    padding-top: 3%;
+    border-radius: 10px;    
 `;
 
-const Board = ({ partners }) => (
+const Board = ({ albums }) => (
     <Container>
         <ul>
-            {partners.map(partner => (<ItemPartner {...partner}/>))}
+            {albums.map(album => (<ItemAlbum {...album}/>))}
         </ul>
     </Container>
 );
