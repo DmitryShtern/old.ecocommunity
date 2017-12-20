@@ -5,13 +5,13 @@ const Container = styled.div`
   width: 100%;
   margin-left: 2%;
   text-align: left;
-`
+`;
 
 const NavigationBar = styled.div`
    background: grey;
    text-align: center;
    width: 46%;
-`
+`;
 
 const Button = styled.input`
    background: green;
@@ -19,16 +19,16 @@ const Button = styled.input`
    color: white;
    padding: 1%;
    margin: 1%;
-`
+`;
 
-const HeaderFeed = ({}) => (
+const HeaderFeed = ({selectCategory}) => (
     <Container>
         <NavigationBar>
-            <Button value="Новости" type="button"/>
-            <Button value="Статьи" type="button"/>
-            <Button value="Газеты" type="button"/>
+            <Button value="Новости" type="button" onClick={() => {selectCategory(1)}}/>
+            <Button value="Статьи" type="button" onClick={() => {selectCategory(2)}}/>
+            <Button value="Газеты" type="button" onClick={() => {selectCategory(3)}}/>
         </NavigationBar>
     </Container>
-)
+);
 
 export default HeaderFeed

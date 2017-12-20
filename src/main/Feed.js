@@ -16,12 +16,10 @@ const ListNews = styled.ul`
     text-align: center;
 `;
 
-const Feed = () => (
+const Feed = ({selected_category, posts}) => (
     <Container>
         <ListNews>
-            <News/>
-            <News/>
-            <News/>
+            {posts.filter(post => (post.category_id === selected_category)).map(post => (<News {...post}/>))}
         </ListNews>
     </Container>
 );

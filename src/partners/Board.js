@@ -10,30 +10,33 @@ const Container = styled.div`
     
     border: 2px solid black;
     border-radius: 10px;
-`;
-
-const ul = styled.div`
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
     
-     // flex-wrap: wrap;
+    padding-top: 3%;
 `;
 
-const Board = () => (
+// const ul = styled.div`
+//     // -moz-column-count: 2;
+//     // -webkit-column-count: 2;
+//     // column-count: 2;
+// `;
+
+const Board = ({ partners }) => (
     <Container>
         <ul>
-            <ItemPartner/>
-            <ItemPartner/>
-            <ItemPartner/>
 
-            <ItemPartner/>
-            <ItemPartner/>
-            <ItemPartner/>
+            {partners.map(partner => (<ItemPartner {...partner}/>))}
 
-            <ItemPartner/>
-            <ItemPartner/>
-            <ItemPartner/>
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
+
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
+
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
+            {/*<ItemPartner/>*/}
         </ul>
     </Container>
 );

@@ -20,11 +20,11 @@ const ContainerNews = styled.div`
     background-color: white;
 `;
 
-const News = () => (
-    <ContainerNews>
-        <Title>Новость</Title>
-        <Image src="https://static.wixstatic.com/media/a8f7f8_d6bbaf029f6541008f08a3ad130a4151.png/v1/fill/w_113,h_113,al_c,usm_0.66_1.00_0.01/a8f7f8_d6bbaf029f6541008f08a3ad130a4151.png"/>
-        <p>Описание Описание Описание Описание Описание Описание</p>
+const News = ({id, title, content, image}) => (
+    <ContainerNews key={id}>
+        <Title>{title}</Title>
+        <Image src={image}/>
+        <p>{content}</p>
     </ContainerNews>
 );
 

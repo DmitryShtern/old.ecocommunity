@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import styled from 'styled-components'
-import { Route } from 'react-router-dom'
-import { Main } from './main'
-
-import { Partners } from './partners'
+import {Route} from 'react-router-dom'
+import {Main} from './main'
+import {Partners} from './partners'
 
 const Screen = styled.div`
     width: 1440px;
@@ -14,38 +13,69 @@ const Screen = styled.div`
 
 class App extends Component {
 
-  constructor() {
-    super();
+    constructor() {
+        super();
 
-  componentWillMount() {
-    // fetch(base_url + '/abc/' + type)
-    //   .then(res => {
-    //     console.log(res)
-    //     if (res.status === 200) {
-    //       return res.json()
-    //     }
-    //   })
-    //   .then(abc => this.setState({ abc: abc }))
-  }
+        this.state = {
+            selected_category: 1,
 
-  render() {
-    return (
-      <Screen>
-        <Route
-          path="/main"
-          component={() => (
-            <Main/>
-          )}
-        />
-        <Route
-          path="/partners"
-          component={() => (
-            <Partners/>
-          )}
-        />
-      </Screen>
-    )
-  }
+            posts: [],
+            partners: []
+        }
+    }
+
+    componentWillMount() {
+        fetch("/getFeed")
+            .then(res => {
+                console.log(res);
+                if (res.status === 200) {
+                    return res.json()
+                }
+            })
+            .then(posts => this.setState({posts: posts}));
+
+        fetch("/getPartners")
+            .then(res => {
+                console.log(res);
+                if (res.status === 200) {
+                    return res.json()
+                }
+            })
+            .then(partners => this.setState({partners: partners}))
+    }
+
+    selectCategory = (category_id) => this.setState({selected_category: category_id});
+
+    render() {
+        return (
+            <Screen>
+                <Route
+                    path="/feed"
+                    component={() => (
+                        <Main
+                            selected_category={this.state.selected_category}
+                            selectCategory={this.selectCategory}
+                            posts={this.state.posts}
+                        />
+                    )}
+                />
+                <Route
+                    path="/gallery"
+                    component={() => (
+                        null
+                    )}
+                />
+                <Route
+                    path="/partners"
+                    component={() => (
+                        <Partners
+                            partners={this.state.partners}
+                        />
+                    )}
+                />
+            </Screen>
+        )
+    }
 }
 
 export default App

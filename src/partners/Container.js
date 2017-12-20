@@ -10,10 +10,10 @@ const Screen = styled.div`
   height: 900px;
 `;
 
-const Container = ({}) => (
+const Container = ({ partners }) => (
     <Screen>
         <Header/>
-        <Board/>
+        <Board partners = { partners }/>
     </Screen>
 );
 
