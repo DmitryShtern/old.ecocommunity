@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ItemPartner from "./ItemPartner";
+import ItemAlbum from "./ItemAlbum";
 
 const Container = styled.div`
     height: 100%;
@@ -14,10 +14,10 @@ const Container = styled.div`
     padding-top: 3%;
 `;
 
-const Board = ({ partners }) => (
+const Board = ({ albums }) => (
     <Container>
         <ul>
-            {partners.map(partner => (<ItemPartner {...partner}/>))}
+            {albums.map(album => (<ItemAlbum {...album}/>))}
         </ul>
     </Container>
 );
