@@ -3,11 +3,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     width: 35%;
-    height: 300px;
 
     background-color: white;
     
-    // margin-top: 10%;
+    margin-bottom: 10%;
     margin-right: 6%;
     margin-left: 6%;
     

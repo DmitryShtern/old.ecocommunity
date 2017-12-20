@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import styled from 'styled-components'
-import { Route } from 'react-router-dom'
-import { Main } from './main'
-import { Gallery } from './gallery'
-import { Partners } from './partners'
+import {Route} from 'react-router-dom'
+import {Main} from './main'
+import {Gallery} from './gallery'
+import {Partners} from './partners'
+import {About} from "./about";
 
 const Screen = styled.div`
     width: 1440px;
@@ -68,6 +69,7 @@ class App extends Component {
                         />
                     )}
                 />
+
                 <Route
                     path="/gallery"
                     component={() => (
@@ -76,12 +78,20 @@ class App extends Component {
                         />
                     )}
                 />
+
                 <Route
                     path="/partners"
                     component={() => (
                         <Partners
                             partners={this.state.partners}
                         />
+                    )}
+                />
+
+                <Route
+                    path="/about"
+                    component={() => (
+                        <About/>
                     )}
                 />
             </Screen>
